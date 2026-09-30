@@ -1,0 +1,6 @@
+.agents/
+.aws/
+.codex/
+graft/
+.playwright-mcp/
+.DS_Store

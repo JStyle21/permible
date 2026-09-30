@@ -1,0 +1,76 @@
+:root {
+  color-scheme: light;
+  --paper: #f5f3eb;
+  --green: #234c39;
+  --muted: #656e60;
+  --line: #dcded1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--green);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+::selection { background: #cfddb9; color: #153e2a; }
+.page { max-width: 1440px; margin: 0 auto; padding: 0 64px; }
+.header { display: flex; justify-content: space-between; align-items: center; padding: 34px 0; border-bottom: 1px solid var(--line); gap: 24px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--green); text-decoration: none; font-size: 31px; font-weight: 700; letter-spacing: -1.8px; }
+.brand-mark { width: 33px; height: 33px; }
+.brand-period { color: #a66645; }
+.brand:focus-visible { outline: 2px solid var(--green); outline-offset: 8px; border-radius: 3px; }
+.header-note { font-size: 12px; color: var(--muted); letter-spacing: .2px; }
+.hero { display: grid; grid-template-columns: 1.12fr 1fr; gap: 32px; align-items: center; padding: 68px 0 65px; }
+.status { display: inline-flex; align-items: center; gap: 10px; border: 1px solid #cbd2c1; border-radius: 100px; padding: 10px 15px; font-size: 10px; letter-spacing: 2px; font-weight: 600; }
+.status-dot { width: 6px; height: 6px; background: #53784a; border-radius: 50%; box-shadow: 0 0 0 3px #e4e8d8; }
+h1 { font-size: clamp(64px, 7.4vw, 106px); line-height: .98; font-weight: 500; letter-spacing: -6px; margin: 28px 0 26px; }
+h1 em { font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -5px; }
+.intro { font-size: 15px; line-height: 1.8; color: var(--muted); margin: 0; }
+.hero-signoff { display: flex; align-items: center; gap: 12px; font-size: 9px; letter-spacing: 1.7px; margin-top: 39px; color: var(--muted); }
+.short-line { width: 28px; height: 1px; background: #86977a; }
+.artwork { position: relative; display: flex; flex-direction: column; align-items: center; }
+.artwork-label { font-size: 9px; letter-spacing: 2px; color: var(--muted); margin-top: 8px; }
+.sculpture { width: 100%; max-width: 490px; height: auto; overflow: visible; }
+.sun { animation: float 7s ease-in-out infinite; }
+.artwork-caption { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 15px; color: var(--muted); margin-top: -7px; }
+.announcement { background: var(--green); color: var(--paper); border-radius: 4px; display: flex; justify-content: space-between; align-items: center; gap: 32px; padding: 34px 40px; }
+.announcement-title { display: flex; align-items: center; gap: 24px; }
+.announcement-title svg { width: 42px; height: 42px; flex: 0 0 42px; color: #cadbb1; }
+h2 { font-size: 26px; line-height: 1.28; letter-spacing: -.6px; font-weight: 400; margin: 0; }
+h2 em { font-family: Georgia, "Times New Roman", serif; font-weight: 400; color: #d9e5c5; }
+.announcement p { color: #d0d8cb; font-size: 13px; line-height: 1.9; margin: 0; }
+.footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px 0 28px; font-size: 11px; color: var(--muted); }
+.footer-arrow { margin-left: 10px; font-size: 16px; color: var(--green); }
+
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+@media (min-width: 1600px) { .page { padding-top: 24px; } .hero { padding-top: 90px; padding-bottom: 90px; } }
+@media (max-width: 1000px) {
+  .page { padding: 0 36px; }
+  .hero { gap: 12px; }
+  h1 { font-size: clamp(64px, 8.5vw, 85px); letter-spacing: -4.5px; }
+  .announcement { padding: 28px; }
+  h2 { font-size: 23px; }
+  .announcement-title { gap: 18px; }
+}
+@media (max-width: 700px) {
+  .page { padding: 0 24px; }
+  .header { padding: 24px 0; }
+  .brand { font-size: 28px; }
+  .brand-mark { width: 30px; height: 30px; }
+  .header-note { display: none; }
+  .hero { grid-template-columns: 1fr; padding: 42px 0 35px; gap: 34px; }
+  h1 { font-size: clamp(58px, 13vw, 86px); letter-spacing: -3.5px; }
+  h1 em { letter-spacing: -3px; }
+  .hero-signoff { margin-top: 28px; }
+  .artwork { width: 100%; max-width: 410px; margin: 0 auto; }
+  .sculpture { max-width: 340px; }
+  .artwork-label { font-size: 8px; }
+  .artwork-caption { font-size: 14px; }
+  .announcement { flex-direction: column; align-items: flex-start; gap: 20px; padding: 28px 24px; }
+  .announcement-title svg { width: 32px; height: 32px; flex-basis: 32px; }
+  h2 { font-size: 24px; }
+  .announcement p { font-size: 12px; }
+  .footer { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { .sun { animation: none; } }

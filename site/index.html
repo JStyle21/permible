@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f3eb">
+    <meta name="description" content="A little patience. A lot of possibility. Permible is coming soon.">
+    <meta property="og:title" content="Permible — Coming soon">
+    <meta property="og:description" content="Good things are on the horizon. A new chapter is taking shape at Permible.">
+    <meta property="og:type" content="website">
+    <title>Permible — Coming soon</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <a class="brand" href="./" aria-label="Permible home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path d="M7 33V7h13c10 0 16 6 16 13s-6 13-16 13H7Z" fill="currentColor"/>
+            <path d="M17 27V13h4c5 0 8 3 8 7s-3 7-8 7h-4Z" fill="#f5f3eb"/>
+          </svg>
+          <span>permible<span class="brand-period">.</span></span>
+        </a>
+        <span class="header-note">A little patience. A lot of possibility.</span>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="headline">
+          <div class="hero-copy">
+            <div class="status"><span class="status-dot" aria-hidden="true"></span> COMING SOON</div>
+            <h1 id="headline">Good things<br>are on the<br><em>horizon.</em></h1>
+            <p class="intro">A new chapter is taking shape.<br>And we can’t wait to share it with you.</p>
+            <div class="hero-signoff"><span class="short-line" aria-hidden="true"></span> THIS IS JUST THE BEGINNING</div>
+          </div>
+
+          <div class="artwork" aria-hidden="true">
+            <span class="artwork-label">ROOM FOR POSSIBILITY</span>
+            <svg class="sculpture" viewBox="0 0 500 540" fill="none">
+              <defs>
+                <linearGradient id="arch" x1="85" y1="135" x2="400" y2="470" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#a5bda2"/><stop offset=".45" stop-color="#c6d9b7"/><stop offset="1" stop-color="#7b9d79"/>
+                </linearGradient>
+                <linearGradient id="inner" x1="145" y1="200" x2="325" y2="445" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#284d3c"/><stop offset="1" stop-color="#4f7555"/>
+                </linearGradient>
+                <linearGradient id="sun" x1="285" y1="220" x2="376" y2="315" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#efb499"/><stop offset="1" stop-color="#ce7c56"/>
+                </linearGradient>
+                <radialGradient id="shadow"><stop stop-color="#2d4935" stop-opacity=".17"/><stop offset="1" stop-color="#2d4935" stop-opacity="0"/></radialGradient>
+              </defs>
+              <circle cx="250" cy="264" r="218" stroke="#dcded1"/>
+              <path d="M32 264h436M250 46v436" stroke="#dcded1" stroke-dasharray="3 7"/>
+              <ellipse cx="257" cy="477" rx="207" ry="27" fill="url(#shadow)"/>
+              <path d="M102 458V246c0-100 65-171 149-171s149 71 149 171v212h-83V247c0-54-27-89-66-89s-66 35-66 89v211h-83Z" fill="url(#arch)"/>
+              <path d="M185 458V247c0-54 27-89 66-89 17 0 32 7 43 19-56-6-91 35-91 96v185h-18Z" fill="url(#inner)"/>
+              <path d="M102 458h83l18-19h-80l-21 19ZM317 458h83l-21-19h-62v19Z" fill="#70926d"/>
+              <path d="M123 439V246c0-84 54-148 128-148 65 0 119 50 140 115" stroke="#eef4e1" stroke-opacity=".45"/>
+              <circle class="sun" cx="292" cy="302" r="65" fill="url(#sun)"/>
+              <path d="M225 398h-16M217 390v16M418 156h-16M410 148v16" stroke="#264c3a" stroke-width="1.5"/>
+              <circle cx="75" cy="164" r="4" fill="#264c3a"/>
+              <circle cx="378" cy="70" r="4" fill="#cf855f"/>
+            </svg>
+            <span class="artwork-caption">A fresh perspective is on its way.</span>
+          </div>
+        </section>
+
+        <section class="announcement" aria-labelledby="announcement-title">
+          <div class="announcement-title">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 2v44M2 24h44M8.5 8.5l31 31M8.5 39.5l31-31" stroke="currentColor" stroke-width="3"/></svg>
+            <h2 id="announcement-title">Small beginnings.<br><em>Endless possibilities.</em></h2>
+          </div>
+          <p>We’re building something new at Permible.<br>Thoughtfully created. Worth the wait.</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>© <span id="year">2026</span> Permible</span>
+        <span>See you soon <span class="footer-arrow" aria-hidden="true">↗</span></span>
+      </footer>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
